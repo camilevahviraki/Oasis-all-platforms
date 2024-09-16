@@ -1,0 +1,116 @@
+.images-slider-container-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.image-slider-buttons-wrapper {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+}
+
+.image-slider-buttons-wrapper div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.images-slider-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.button-slide-image {
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    background-color: #8a8a8a4a;
+}
+
+.button-slide-image:hover {
+    color: #fff;
+    background-color: #276262;
+}
+
+.button-next-image-left {
+    position: absolute;
+    left: 10px;
+    top: 45%;
+}
+
+.button-next-image-left img {
+    transform: rotate(270deg);
+    height: 30px;
+    padding: 8px;
+    background-color: rgba(81, 82, 83, 0.527);
+}
+
+.button-next-image-left img:hover {
+    background-color: rgba(169, 170, 170, 0.562);
+}
+
+.button-next-image-right {
+    position: absolute;
+    right: 10px;
+    top: 45%;
+}
+
+.button-next-image-right img {
+    transform: rotate(90deg);
+    height: 30px;
+    padding: 8px;
+    background-color: rgba(81, 82, 83, 0.527);
+}
+
+.button-next-image-right img:hover {
+    background-color: rgba(169, 170, 170, 0.562);
+}
+
+.image-slider-dots {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(50, 78, 78, 0.486);
+    border: 1px solid gray;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.current-dot {
+    width: 11px;
+    height: 11px;
+    background-color: #276262;
+    border: 1px solid #757575c9;
+}
+
+.image-sliders-dots-wrap {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    justify-content: center;
+    z-index: 5;
+}
+
+.image-slider-video-wrap {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.image-slider-flex {
+    flex: 0 0 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
