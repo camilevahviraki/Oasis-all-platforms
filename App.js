@@ -2,9 +2,9 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import SignIn from './app/auth/sign-in';
-import UpdatePassword from './app/auth/change-password';
-import Update from './app/auth/update';
+import SignIn from './app/components/auth/sign-in';
+import UpdatePassword from './app/components/auth/change-password';
+import Update from './app/components/auth/update';
 
 const Stack = createNativeStackNavigator();
 
