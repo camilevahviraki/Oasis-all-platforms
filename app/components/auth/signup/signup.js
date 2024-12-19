@@ -11,23 +11,23 @@ export default function Signup() {
 
   const auth = getAuth(firebaseapp);
 
-// Example function to sign up a user
-const handleEmailSignUp = async (email, password) => {
-  try {
-    const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-    console.log('User signed up:', userCredential.user);
-  } catch (error) {
-    console.error('Error signing up:', error);
-  }
-};
+  // Example function to sign up a user
+  const handleEmailSignUp = async (email, password) => {
+    try {
+      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+      console.log('User signed up:', userCredential.user);
+    } catch (error) {
+      console.error('Error signing up:', error);
+    }
+  };
 
-//   const handleEmailSignUp = () => {
-//     firebaseapp.auth().createUserWithEmailAndPassword(email, password)
-//       .then(userCredential => {
-//         console.log('Email User:', userCredential.user);
-//       })
-//       .catch(error => console.error('Error creating user:', error));
-//   };
+  //   const handleEmailSignUp = () => {
+  //     firebaseapp.auth().createUserWithEmailAndPassword(email, password)
+  //       .then(userCredential => {
+  //         console.log('Email User:', userCredential.user);
+  //       })
+  //       .catch(error => console.error('Error creating user:', error));
+  //   };
 
   const handleGoogleSignUp = async () => {
     const provider = new firebaseapp.auth.GoogleAuthProvider();

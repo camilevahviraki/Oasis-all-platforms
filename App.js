@@ -12,7 +12,7 @@ import Update from './app/components/auth/update';
 import axios from 'axios';
 import { name as appName } from './app.json';
 
-axios.defaults.adapter = require('axios/lib/adapters/xhr');
+// axios.defaults.adapter = require('axios/lib/adapters/xhr');
 AppRegistry.registerComponent(appName, () => App);
 const Stack = createNativeStackNavigator();
 
