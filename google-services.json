@@ -1,0 +1,39 @@
+{
+    "project_info": {
+      "project_number": "396073108706",
+      "project_id": "oasis-app-fdc4b",
+      "storage_bucket": "oasis-app-fdc4b.appspot.com"
+    },
+    "client": [
+      {
+        "client_info": {
+          "mobilesdk_app_id": "1:396073108706:android:dd855723074e57150f4abb",
+          "android_client_info": {
+            "package_name": "com.expo.oasis"
+          }
+        },
+        "oauth_client": [
+          {
+            "client_id": "396073108706-6mltio84to620snadrqj3l679ankkva9.apps.googleusercontent.com",
+            "client_type": 3
+          }
+        ],
+        "api_key": [
+          {
+            "current_key": "AIzaSyBh6FNXEW5wuXk_uRbjpkpWWj4WnED0HI8"
+          }
+        ],
+        "services": {
+          "appinvite_service": {
+            "other_platform_oauth_client": [
+              {
+                "client_id": "396073108706-6mltio84to620snadrqj3l679ankkva9.apps.googleusercontent.com",
+                "client_type": 3
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "configuration_version": "1"
+  }
