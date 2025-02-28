@@ -4,13 +4,10 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Provider } from 'react-redux';
 import { store } from './app/redux/reduxStore';
-import SignIn from './app/components/auth/sign-in';
-import UpdatePassword from './app/components/auth/change-password';
-// import SignUp from './app/components/auth/sign-up';
-import Signup from './app/components/auth/signup/signup';
-import Update from './app/components/auth/update';
-import axios from 'axios';
 import { name as appName } from './app.json';
+import Login from './app/screens/Authentication/signin';
+import Signup from './app/screens/Authentication/signup';
+import Home  from './app/screens/landing'
 
 // axios.defaults.adapter = require('axios/lib/adapters/xhr');
 AppRegistry.registerComponent(appName, () => App);
@@ -21,8 +18,9 @@ export default function App() {
     <Provider store={store}>
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen name="/" component={Signup} />
-        <Stack.Screen name="auth/update" component={Update} />
+        <Stack.Screen name="/" component={Home} />
+        <Stack.Screen name="Signup" component={Signup} />
+        <Stack.Screen name="Login" component={Login}/>
       </Stack.Navigator>
     </NavigationContainer>
     </Provider>
